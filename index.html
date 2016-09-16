@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Maksim's first assignment</title>
   </head>
   <body>
 <h1>Hello World!</h1>
@@ -12,15 +12,22 @@
   var userName = prompt('What\'s your name?')
   alert('Welcome to my site ' + userName);
 
-  var questionOne = prompt('Was I born in WA?');
-  questionOne = questionOne.toLowerCase();
+userAnswer();
 
-  if (questionOne === 'yes' || questionOne === 'y') {
-    // run code
-  } else if (questionOne === 'no' || questionOne === 'n') {
-    //some more code
-  } else {
+  function userAnswer() {
+    var answerOne = prompt('Was I born in WA?');
+    answerOne = answerOne.toLowerCase();
+    //var answerOne = prompt('question?').toLowerCase; to reduce code
 
+    if (answerOne === 'yes' || answerOne === 'y') {
+      return alert(userName + ", you're correct!")
+    } else if (answerOne === 'no' || answerOne === 'n') {
+      alert("No? =) Try again");
+      userAnswer();
+    } else {
+      alert(userName + ", please answer Yes or No");
+      userAnswer();
+    }
   }
 
 </script>
