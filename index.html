@@ -2,10 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Maksim's first assignment</title>
+    <title>About Maksim</title>
   </head>
+
   <body>
 <h1>Hello World!</h1>
+<li>Childhood</li>
+  <ul>
+    Born and raised in Central Asia
+  </ul>
+  <ul>three
+  </ul>
+<li>
+  Adulthood
+</li>
 
 
 <script>
@@ -15,15 +25,15 @@
 userAnswer();
 
   function userAnswer() {
-    var answerOne = prompt('Was I born in WA?');
+    var answerOne = prompt('Was I born in Washington?');
     answerOne = answerOne.toLowerCase();
     //var answerOne = prompt('question?').toLowerCase; to reduce code
 
     if (answerOne === 'yes' || answerOne === 'y') {
-      return alert(userName + ", you're correct!")
-    } else if (answerOne === 'no' || answerOne === 'n') {
-      alert("No? =) Try again");
+      alert(userName + ", you're wrong!");
       userAnswer();
+    } else if (answerOne === 'no' || answerOne === 'n') {
+      alert("Correct, I was born in Kazakhstan");
     } else {
       alert(userName + ", please answer Yes or No");
       userAnswer();
@@ -31,5 +41,7 @@ userAnswer();
   }
 
 </script>
+
+
   </body>
 </html>
