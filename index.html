@@ -21,23 +21,68 @@
   var userName = prompt('What\'s your name?')
   alert('Welcome to my site ' + userName);
 
-userAnswer();
+responseOne();
+responseTwo();
+responseThree();
+responseFour();
 
-  function userAnswer() {
-    var answerOne = prompt('Was I born in Washington?');
-    answerOne = answerOne.toLowerCase();
-    //var answerOne = prompt('question?').toLowerCase; to reduce code
+  function responseOne() {
+    var answerOne = prompt('Was I born in Washington?').toLowerCase;
 
     if (answerOne === 'yes' || answerOne === 'y') {
       alert(userName + ", you're wrong!");
-      userAnswer();
+      responseOne();
     } else if (answerOne === 'no' || answerOne === 'n') {
       alert("Correct, I was born in Kazakhstan");
     } else {
       alert(userName + ", please answer Yes or No");
-      userAnswer();
+      responseOne();
     }
   }
+
+  function responseTwo() {
+    var answerTwo = prompt('Is Kent my hometown?').toLowerCase;
+
+    if (answerTwo === 'yes' || answerTwo === 'y') {
+      alert(userName + ", you're wrong!");
+      responseTwo();
+    } else if (answerTwo === 'no' || answerTwo === 'n') {
+      alert("Correct, I was born in Kazakhstan. Tukwila is my US hometown");
+    } else {
+      alert(userName + ", please answer Yes or No");
+      responseTwo();
+    }
+  }
+
+  function responseThree() {
+    var answerTree = prompt('Have I lived in other states?').toLowerCase;
+
+    if (answerThree === 'yes' || answerThree === 'y') {
+      alert(userName + ", you're wrong! Try again");
+      responseThree();
+    } else if (answerThree === 'no' || answerThree === 'n') {
+      alert(username + ", you're correct! Next question");
+    } else {
+      alert(userName + ", please answer Yes or No");
+      responseThree();
+    }
+  }
+
+  function responceFour() {
+    var answerFour = prompt('Did I go to WSU?').toLowerCase;
+
+    if (answerFour === 'yes' || answerFour === 'y') {
+      alert(userName + ", you're wrong! Try again");
+      responseFour();
+    } else if (answerFour === 'no' || answerFour === 'n') {
+      alert("Correct, I went to UW");
+    } else {
+      alert(userName + ", please answer Yes or No");
+      responceFour();
+    }
+  }
+
+
 
 </script>
 
