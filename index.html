@@ -28,7 +28,6 @@
 
     function responseOne() {
       var answerOne = prompt('Was I born in Washington?').toLowerCase();
-
       if (answerOne === 'yes' || answerOne === 'y') {
         alert(userName + ", you're wrong!");
         responseOne();
@@ -42,7 +41,6 @@
 
     function responseTwo() {
       var answerTwo = prompt('Have I lived in Kent?').toLowerCase();
-
       if (answerTwo === 'yes' || answerTwo === 'y') {
         alert(userName + ", you're wrong!");
         responseTwo();
@@ -55,32 +53,31 @@
     }
 
     function responseThree() {
-      var answerTree = prompt('Have I lived in other states?').toLowerCase();
-
+      var answerThree = prompt('Have I lived in other states?').toLowerCase();
       if (answerThree === 'yes' || answerThree === 'y') {
         alert(userName + ", you're wrong! Try again");
         responseThree();
       } else if (answerThree === 'no' || answerThree === 'n') {
-        alert(username + ", you're correct! Next question");
+        alert(userName + ", you're correct! Next question");
       } else {
         alert(userName + ", please answer Yes or No");
         responseThree();
       }
     }
 
-    function responceFour() {
+    function responseFour() {
       var answerFour = prompt('Did I go to WSU?').toLowerCase();
-
       if (answerFour === 'yes' || answerFour === 'y') {
         alert(userName + ", you're wrong! Try again");
         responseFour();
       } else if (answerFour === 'no' || answerFour === 'n') {
-        alert("Correct, I went to UW");
+        alert(userName + ", you're correct! I went to UW");
       } else {
         alert(userName + ", please answer Yes or No");
-        responceFour();
+        responseFour();
       }
     }
+
   </script>
 
 </body>
