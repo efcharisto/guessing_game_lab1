@@ -9,14 +9,22 @@ h2 {
   letter-spacing: 1px;
 }
 
+.section {
+  font-size: 19px;
+  letter-spacing: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
 #child {
   border: 3px #006400 dotted;
   padding-right: 2px;
   padding-left: 2px;
   padding-top: 2px;
+  padding-bottom: 2px;
   font-style: italic;
   text-align: left;
-  width: 190px;
+  width: 200px;
   font-size: 12px;
   border-radius: 5px;
   font-family: helvetica;
@@ -27,17 +35,11 @@ h2 {
   padding-right: 2px;
   padding-left: 2px;
   padding-top: 2px;
+  padding-bottom: 2px;
   text-align: left;
   border: 3px #006400 solid;
   border-radius: 10px;
-  width: 190px;
+  width: 200px;
   font-family: helvetica;
   font-size: 12px;
-}
-
-.section {
-  font-size: 19px;
-  letter-spacing: 10px;
-  text-align: left;
-  font-weight: bold;
 }
