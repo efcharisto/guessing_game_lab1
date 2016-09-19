@@ -1,0 +1,31 @@
+body {
+  background-color: #CCCC81;
+  margin: 30px;
+}
+
+h2 {
+  font-family: Helvetica;
+  text-align: left;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
+  letter-spacing: 1px;
+}
+
+#child {
+  border: 3px #006400 dotted;
+  text-align: left;
+  width: 200px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-family: helvetica;
+}
+
+#adult {
+  text-align: left;
+  border: 3px #006400 solid;
+  border-radius: 10px;
+  width: 200px;
+  font-family: helvetica;
+  font-size: 12px;
+}
