@@ -6,26 +6,38 @@ body {
 h2 {
   font-family: Helvetica;
   text-align: left;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-top: 2px;
   letter-spacing: 1px;
 }
 
 #child {
   border: 3px #006400 dotted;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
+  font-style: italic;
   text-align: left;
-  width: 200px;
+  width: 190px;
   font-size: 12px;
   border-radius: 5px;
   font-family: helvetica;
 }
 
 #adult {
+  font-style: italic;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
   text-align: left;
   border: 3px #006400 solid;
   border-radius: 10px;
-  width: 200px;
+  width: 190px;
   font-family: helvetica;
   font-size: 12px;
+}
+
+.section {
+  font-size: 19px;
+  letter-spacing: 10px;
+  text-align: left;
+  font-weight: bold;
 }
