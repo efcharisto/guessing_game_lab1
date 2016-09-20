@@ -1,3 +1,5 @@
+'use strict';
+
 var userName = prompt('What\'s your name?');
 alert('Welcome to my site ' + userName);
 
