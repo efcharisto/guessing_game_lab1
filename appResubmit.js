@@ -12,6 +12,8 @@ userAnswer();
 anotherAnswer();
 finalAnswer();
 
+var countries = ['Russia', 'Canada', 'United States', 'China'];
+
 function zeroAnswer() {
   var zeroAnswer = prompt(userName + ' do you like Seattle?').toLowerCase();
   if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
