@@ -3,6 +3,7 @@
 var userName = prompt('What\'s your name?');
 alert('Welcome to my site ' + userName + '! I\'ll ask you some Qs if you don\'t mind.');
 
+country();
 zeroAnswer();
 responseOne();
 responseTwo();
@@ -12,10 +13,24 @@ userAnswer();
 anotherAnswer();
 finalAnswer();
 
-var countries = ['Russia', 'Canada', 'United States', 'China'];
+/*
+var countries = ['Russia', 'Canada', 'United States', 'US', 'USA', 'China', 'Brazil'];
+//array of 5 largest countries, multiple typing options for US
+// cant get this to work =(
+function country(){
+  var countryGuess = prompt('Name ONE of the 5 largest countries by land area.').toUpperCase();
+  //asks to enter one of top 5 largest countries and converst to upper case
+  if (countryGuess.contains(countries)) {
+    alert('Good job!');
+  } else {
+    alert('Wrong entry, try again!');
+    country();
+  }
+} */
+
 
 function zeroAnswer() {
-  var zeroAnswer = prompt(userName + ' do you like Seattle?').toLowerCase();
+  var zeroAnswer = prompt(userName + ', do you like Seattle?').toLowerCase();
   if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
     return alert('Seattle rocks!');
   } else if (zeroAnswer === 'no' || zeroAnswer === 'n') {
