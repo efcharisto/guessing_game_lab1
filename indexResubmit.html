@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Maksim's first assignment</title>
+</head>
+
+<body>
+  <h3>Thanks for answering!</h3>
+
+  <script>
+    var userName = prompt('What\'s your name?')
+    alert('Welcome to my site ' + userName);
+
+    zeroAnswer();
+    userAnswer();
+    anotherAnswer();
+    finalAnswer();
+
+    function zeroAnswer() {
+      var zeroAnswer = prompt(userName + ' do you like Seattle?').toLowerCase();
+      if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
+        return alert('Seattle rocks!')
+      } else if (zeroAnswer === 'no' || zeroAnswer === 'n') {
+        alert('You should visit Seattle to like it. NEXT TIME SAY YES');
+      } else {
+        alert('That was a Yes or No question, ' + userName + '. Moving on...');
+      }
+    }
+
+    function userAnswer() {
+      var answerOne = prompt('Am I taller than you?').toLowerCase();
+      if (answerOne === 'yes' || answerOne === 'y') {
+        return alert('Yeah, probably! I\'m 6.4')
+      } else if (answerOne === 'no' || answerOne === 'n') {
+        alert('Pretty sure I\'m taller. Accept it');
+        userAnswer();
+      } else {
+        alert(userName + ", please answer Yes or No");
+        userAnswer();
+      }
+    }
+
+    function anotherAnswer() {
+      var answerTwo = prompt('Do you cook?').toLowerCase();
+      if (answerTwo === 'yes' || answerTwo === 'y') {
+        return alert('Sweet, bring me some food please')
+      } else if (answerTwo === 'no' || answerTwo === 'n') {
+        alert('Sucks! I\'m starving');
+      } else {
+        alert(userName + ", please answer Yes or No");
+        anotherAnswer();
+      }
+    }
+
+    function finalAnswer() {
+      var lastAnswer = prompt('Did you like these questions?').toLowerCase();
+      if (lastAnswer === 'yes' || lastAnswer === 'y') {
+        alert('That\'s great  ' + userName + '! Answer them again! :)')
+        zeroAnswer();
+        userAnswer();
+        anotherAnswer();
+        finalAnswer();
+      } else if (lastAnswer === 'no' || lastAnswer === 'n') {
+        alert('It\'s all good my friend. Take care');
+      } else {
+        alert(userName + ", please answer Yes or No");
+        finalAnswer();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
