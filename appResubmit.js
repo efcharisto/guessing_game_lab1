@@ -100,6 +100,7 @@ function anotherAnswer() {
   }
 }
 
+//If user likes Qs, then they ALL repeat. Be sure to say NO
 function finalAnswer() {
   var lastAnswer = prompt('Did you like these questions?').toLowerCase();
   if (lastAnswer === 'yes' || lastAnswer === 'y') {
