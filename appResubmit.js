@@ -25,14 +25,19 @@ function country(){
     country();
   }
 } */
+
 function sizeFrance(){
   var franceGuess = ['1', '2', '3', '4', '4.2', '5'];
   var sizeGuess = prompt('How many times can you fit France into Kazakhstan?');
-  if (sizeGuess == franceGuess.indexOf('4') || franceGuess.indexOf('4.2')) {
+  if (sizeGuess == franceGuess.indexOf('4')) {
+//can I add the OR operator? ^ index of 4 OR 4.2.Tried but nothing worked 100%
+//I wanna combine the IF with ELSE IF in one line if possible.
+    return alert('Good job! 4 times, or 4.2 to be exact');
+  } else if (sizeGuess == franceGuess.indexOf('4.2')) {
     return alert('Good job! 4 times, or 4.2 to be exact');
   } else {
     alert('Wrong entry, try again!');
-    country();
+    sizeFrance();
   }
 }
 
