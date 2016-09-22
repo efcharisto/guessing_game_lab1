@@ -3,7 +3,8 @@
 var userName = prompt('What\'s your name?');
 alert('Welcome to my site ' + userName + '! I\'ll ask you some Qs if you don\'t mind.');
 
-country();
+sizeFrance();
+//country();
 zeroAnswer();
 responseOne();
 responseTwo();
@@ -13,20 +14,27 @@ userAnswer();
 anotherAnswer();
 finalAnswer();
 
-/*
-var countries = ['Russia', 'Canada', 'United States', 'US', 'USA', 'China', 'Brazil'];
-//array of 5 largest countries, multiple typing options for US
-// cant get this to work =(
+/* HELP! I wanted to have an object with countries but cant make it work
 function country(){
-  var countryGuess = prompt('Name ONE of the 5 largest countries by land area.').toUpperCase();
-  //asks to enter one of top 5 largest countries and converst to upper case
-  if (countryGuess.contains(countries)) {
-    alert('Good job!');
+  var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
+  var countryGuess = prompt('Name the largest country in North America').toLowerCase();
+  if (countryGuess == countries.indexOf('canada')) {
+    return alert('Good job!');
   } else {
     alert('Wrong entry, try again!');
     country();
   }
 } */
+function sizeFrance(){
+  var franceGuess = ['1', '2', '3', '4', '4.2', '5'];
+  var sizeGuess = prompt('How many times can you fit France into Kazakhstan?');
+  if (sizeGuess == franceGuess.indexOf('4') || franceGuess.indexOf('4.2')) {
+    return alert('Good job! 4 times, or 4.2 to be exact');
+  } else {
+    alert('Wrong entry, try again!');
+    country();
+  }
+}
 
 
 function zeroAnswer() {
