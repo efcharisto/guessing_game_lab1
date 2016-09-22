@@ -130,9 +130,11 @@ function userAnswer() {
     return alert('Yeah, probably! I\'m tall!');
   } else if (answerOne === 'no' || answerOne === 'n') {
     alert('Pretty sure I\'m taller. Accept it');
+    console.log('wrong answer. redo');
     userAnswer();
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('invalid input. redo');
     userAnswer();
   }
 }
@@ -140,10 +142,13 @@ function userAnswer() {
 function anotherAnswer() {
   var answerTwo = prompt('Do I cook?').toLowerCase();
   if (answerTwo === 'yes' || answerTwo === 'y') {
+    console.log('correct');
     return alert('Barely do. Can I have a bite of that pizza?..');
   } else if (answerTwo === 'no' || answerTwo === 'n') {
+    console.log('wrong answer');
     alert('Right... I\'m starving. Anyway, you\'re partly wrong');
   } else {
+    console.log('invalid input, redo');
     alert(userName + ', please answer Yes or No');
     anotherAnswer();
   }
@@ -153,6 +158,7 @@ function anotherAnswer() {
 function finalAnswer() {
   var lastAnswer = prompt('Did you like these questions?').toLowerCase();
   if (lastAnswer === 'yes' || lastAnswer === 'y') {
+    console.log('start all over!');
     alert('That\'s great  ' + userName + '! Answer them again! :)');
     zeroAnswer();
     responseOne();
@@ -166,6 +172,7 @@ function finalAnswer() {
     alert('It\'s all good my friend. Take care');
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('invalid input, redo');
     finalAnswer();
   }
 }
