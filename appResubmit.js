@@ -32,10 +32,13 @@ function sizeFrance() {
   if (sizeGuess == franceGuess.indexOf('4')) {
     //can I add the OR operator? ^ index of 4 OR 4.2.Tried but nothing worked 100%
     //I wanna combine the IF with ELSE IF in one line if possible.
+    console.log('user guessed 4. OK');
     return alert('Good job! 4 times, or 4.2 to be exact');
   } else if (sizeGuess == franceGuess.indexOf('4.2')) {
+    console.log('user guessed 4.2. OK');
     return alert('Good job! 4 times, or 4.2 to be exact');
   } else {
+    console.log('wrong answer or input. make user guess again');
     alert('Wrong entry, try again!');
     sizeFrance();
   }
@@ -45,10 +48,13 @@ function sizeFrance() {
 function zeroAnswer() {
   var zeroAnswer = prompt(userName + ', do you like Seattle?').toLowerCase();
   if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
+    console.log('answered yes');
     return alert('Seattle rocks!');
   } else if (zeroAnswer === 'no' || zeroAnswer === 'n') {
+    console.log('answered no');
     alert('You should visit Seattle to like it. NEXT TIME SAY YES');
   } else {
+    console.log('wrong input or answer, move to the next question');
     alert('That was a Yes or No question, ' + userName + '. Moving on...');
   }
 }
@@ -56,12 +62,15 @@ function zeroAnswer() {
 function responseOne() {
   var answerOne = prompt('Was I born in Washington?').toLowerCase();
   if (answerOne === 'yes' || answerOne === 'y') {
+    console.log('wrong guess, ask user again');
     alert(userName + ', you\'re wrong!');
     responseOne();
   } else if (answerOne === 'no' || answerOne === 'n') {
+    console.log('right guess, congrats!');
     alert('Correct, I was born in Kazakhstan');
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('wrong answer or input, repeat the Q');
     responseOne();
   }
 }
@@ -70,11 +79,14 @@ function responseTwo() {
   var answerTwo = prompt('Have I ever lived in Kent?').toLowerCase();
   if (answerTwo === 'yes' || answerTwo === 'y') {
     alert(userName + ', you\'re wrong!');
+    console.log('wrong answer, make user guess again');
     responseTwo();
   } else if (answerTwo === 'no' || answerTwo === 'n') {
     alert('YEAH! I\'ve always lived in Tuk-town!');
+    console.log('right answer');
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('wrong input, make user guess again');
     responseTwo();
   }
 }
@@ -83,11 +95,14 @@ function responseThree() {
   var answerThree = prompt('Have I lived in other states?').toLowerCase();
   if (answerThree === 'yes' || answerThree === 'y') {
     alert(userName + '\', you\'re wrong! Try again');
+    console.log('make guess again. wrong answer');
     responseThree();
   } else if (answerThree === 'no' || answerThree === 'n') {
     alert(userName + '\', you\'re correct! Next question');
+    console.log('correct, next Q');
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('invalid input, ask again');
     responseThree();
   }
 }
@@ -95,12 +110,15 @@ function responseThree() {
 function responseFour() {
   var answerFour = prompt('Did I go to WSU?').toLowerCase();
   if (answerFour === 'yes' || answerFour === 'y') {
+    console.log('wrong answer, ask user again');
     alert(userName + ', you\'re wrong! Try again');
     responseFour();
   } else if (answerFour === 'no' || answerFour === 'n') {
+    console.log('correct answer');
     alert(userName + '\, you\'re correct! I went to UW');
   } else {
     alert(userName + ', please answer Yes or No');
+    console.log('invalid input. ask again');
     responseFour();
   }
 }
@@ -108,6 +126,7 @@ function responseFour() {
 function userAnswer() {
   var answerOne = prompt('Am I taller than you?').toLowerCase();
   if (answerOne === 'yes' || answerOne === 'y') {
+    console.log('correct guess');
     return alert('Yeah, probably! I\'m tall!');
   } else if (answerOne === 'no' || answerOne === 'n') {
     alert('Pretty sure I\'m taller. Accept it');
