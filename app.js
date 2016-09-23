@@ -14,7 +14,7 @@ questionSix();
 questionSeven();
 finalAnswer();
 
-function country(){
+function country() {
   var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
   var countryGuess = prompt('Name ONE of the 5 largest countries in the world').toLowerCase();
   if (countries.indexOf(countryGuess) > -1) {
