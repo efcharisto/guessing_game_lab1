@@ -1,12 +1,13 @@
 body {
   background-color: #CCCC81;
-  margin: 30px;
+  margin: 25px;
 }
 
 h2 {
   font-family: Helvetica, sans-serif;
   text-align: left;
   letter-spacing: 1px;
+  margin-bottom: 3px;
 }
 
 #child {
@@ -21,6 +22,7 @@ h2 {
   font-size: 12px;
   border-radius: 5px;
   font-family: helvetica, sans-serif;
+  margin-bottom: 3px;
 }
 
 #adult {
@@ -35,11 +37,13 @@ h2 {
   max-width: 200px;
   font-family: helvetica, sans-serif;;
   font-size: 12px;
+  margin-bottom: 3px;
 }
 
 #questionList {
   text-align: left;
   font-size: 15px;
+  margin-bottom: 1px;
 }
 
 .section {
