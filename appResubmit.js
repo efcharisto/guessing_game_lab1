@@ -44,7 +44,6 @@ function sizeFrance() {
   }
 }
 
-
 function zeroAnswer() {
   var zeroAnswer = prompt(userName + ', do you like Seattle?').toLowerCase();
   if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
