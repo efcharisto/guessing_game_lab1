@@ -3,15 +3,15 @@
 var userName = prompt('What\'s your name?');
 alert('Welcome to my site ' + userName + '! I\'ll ask you some Qs if you don\'t mind.');
 
-sizeFrance();
 country();
-zeroAnswer();
-responseOne();
-responseTwo();
-responseThree();
-responseFour();
-userAnswer();
-anotherAnswer();
+sizeFrance();
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
 finalAnswer();
 
 function country(){
@@ -38,12 +38,12 @@ function sizeFrance() {
   }
 }
 
-function zeroAnswer() {
-  var zeroAnswer = prompt(userName + ', do you like Seattle?').toLowerCase();
-  if (zeroAnswer === 'yes' || zeroAnswer === 'y') {
+function questionOne() {
+  var answerOne = prompt(userName + ', do you like Seattle?').toLowerCase();
+  if (answerOne === 'yes' || answerOne === 'y') {
     console.log('answered yes');
     return alert('Seattle rocks!');
-  } else if (zeroAnswer === 'no' || zeroAnswer === 'n') {
+  } else if (answerOne === 'no' || answerOne === 'n') {
     console.log('answered no');
     alert('You should visit Seattle to like it. NEXT TIME SAY YES');
   } else {
@@ -52,98 +52,98 @@ function zeroAnswer() {
   }
 }
 
-function responseOne() {
-  var answerOne = prompt('Was I born in Washington?').toLowerCase();
-  if (answerOne === 'yes' || answerOne === 'y') {
+function questionTwo() {
+  var answerTwo = prompt('Was I born in Washington?').toLowerCase();
+  if (answerTwo === 'yes' || answerTwo === 'y') {
     console.log('wrong guess, ask user again');
     alert(userName + ', you\'re wrong!');
-    responseOne();
-  } else if (answerOne === 'no' || answerOne === 'n') {
+    questionTwo();
+  } else if (answerTwo === 'no' || answerTwo === 'n') {
     console.log('right guess, congrats!');
     alert('Correct, I was born in Kazakhstan');
   } else {
     alert(userName + ', please answer Yes or No');
     console.log('wrong answer or input, repeat the Q');
-    responseOne();
+    questionTwo();
   }
 }
 
-function responseTwo() {
-  var answerTwo = prompt('Have I ever lived in Kent?').toLowerCase();
-  if (answerTwo === 'yes' || answerTwo === 'y') {
+function questionThree() {
+  var answerThree = prompt('Have I ever lived in Kent?').toLowerCase();
+  if (answerThree === 'yes' || answerThree === 'y') {
     alert(userName + ', you\'re wrong!');
     console.log('wrong answer, make user guess again');
-    responseTwo();
-  } else if (answerTwo === 'no' || answerTwo === 'n') {
+    questionThree();
+  } else if (answerThree === 'no' || answerThree === 'n') {
     alert('YEAH! I\'ve always lived in Tuk-town!');
     console.log('right answer');
   } else {
     alert(userName + ', please answer Yes or No');
     console.log('wrong input, make user guess again');
-    responseTwo();
+    questionThree();
   }
 }
 
-function responseThree() {
-  var answerThree = prompt('Have I lived in other states?').toLowerCase();
-  if (answerThree === 'yes' || answerThree === 'y') {
+function questionFour() {
+  var answerFour = prompt('Have I lived in other states?').toLowerCase();
+  if (answerFour === 'yes' || answerFour === 'y') {
     alert(userName + '\', you\'re wrong! Try again');
     console.log('make guess again. wrong answer');
-    responseThree();
-  } else if (answerThree === 'no' || answerThree === 'n') {
+    questionFour();
+  } else if (answerFour === 'no' || answerFour === 'n') {
     alert(userName + '\', you\'re correct! Next question');
     console.log('correct, next Q');
   } else {
     alert(userName + ', please answer Yes or No');
     console.log('invalid input, ask again');
-    responseThree();
+    questionFour();
   }
 }
 
-function responseFour() {
-  var answerFour = prompt('Did I go to WSU?').toLowerCase();
-  if (answerFour === 'yes' || answerFour === 'y') {
+function questionFive() {
+  var answerFive = prompt('Did I go to WSU?').toLowerCase();
+  if (answerFive === 'yes' || answerFive === 'y') {
     console.log('wrong answer, ask user again');
     alert(userName + ', you\'re wrong! Try again');
-    responseFour();
-  } else if (answerFour === 'no' || answerFour === 'n') {
+    questionFive();
+  } else if (answerFive === 'no' || answerFive === 'n') {
     console.log('correct answer');
     alert(userName + '\, you\'re correct! I went to UW');
   } else {
     alert(userName + ', please answer Yes or No');
     console.log('invalid input. ask again');
-    responseFour();
+    questionFive();
   }
 }
 
-function userAnswer() {
-  var answerOne = prompt('Am I taller than you?').toLowerCase();
-  if (answerOne === 'yes' || answerOne === 'y') {
+function questionSix() {
+  var answerSix = prompt('Am I taller than you?').toLowerCase();
+  if (answerSix === 'yes' || answerSix === 'y') {
     console.log('correct guess');
     return alert('Yeah, probably! I\'m tall!');
-  } else if (answerOne === 'no' || answerOne === 'n') {
+  } else if (answerSix === 'no' || answerSix === 'n') {
     alert('Pretty sure I\'m taller. Accept it');
     console.log('wrong answer. redo');
-    userAnswer();
+    questionSix();
   } else {
     alert(userName + ', please answer Yes or No');
     console.log('invalid input. redo');
-    userAnswer();
+    questionSix();
   }
 }
 
-function anotherAnswer() {
-  var answerTwo = prompt('Do I cook?').toLowerCase();
-  if (answerTwo === 'yes' || answerTwo === 'y') {
+function questionSeven() {
+  var answerSeven = prompt('Do I cook?').toLowerCase();
+  if (answerSeven === 'yes' || answerSeven === 'y') {
     console.log('correct');
     return alert('Barely do. Can I have a bite of that pizza?..');
-  } else if (answerTwo === 'no' || answerTwo === 'n') {
+  } else if (answerSeven === 'no' || answerSeven === 'n') {
     console.log('wrong answer');
     alert('Right... I\'m starving. Anyway, you\'re partly wrong');
   } else {
     console.log('invalid input, redo');
     alert(userName + ', please answer Yes or No');
-    anotherAnswer();
+    questionSeven();
   }
 }
 
@@ -153,13 +153,15 @@ function finalAnswer() {
   if (lastAnswer === 'yes' || lastAnswer === 'y') {
     console.log('start all over again!');
     alert('That\'s great  ' + userName + '! Answer them again! :)');
-    zeroAnswer();
-    responseOne();
-    responseTwo();
-    userAnswer();
-    responseThree();
-    anotherAnswer();
-    responseFour();
+    country();
+    sizeFrance();
+    questionOne();
+    questionTwo();
+    questionThree();
+    questionFour();
+    questionFive();
+    questionSix();
+    questionSeven();
     finalAnswer();
   } else if (lastAnswer === 'no' || lastAnswer === 'n') {
     console.log('Ze End');
