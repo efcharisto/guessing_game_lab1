@@ -14,11 +14,10 @@ userAnswer();
 anotherAnswer();
 finalAnswer();
 
-
 function country(){
   var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
-  var countryGuess = prompt('Name the largest country in North America').toLowerCase();
-  if (countryGuess == countries.indexOf(countryGuess) > -1) {
+  var countryGuess = prompt('Name ONE of the 5 largest countries in the world').toLowerCase();
+  if (countries.indexOf(countryGuess) > -1) {
     return alert('Good job!');
   } else {
     alert('Wrong entry, try again!');
@@ -29,7 +28,7 @@ function country(){
 function sizeFrance() {
   var franceGuess = ['4', '4.2'];
   var sizeGuess = prompt('How many times can you fit France into Kazakhstan?');
-  if (sizeGuess == franceGuess.indexOf(franceGuess)) {
+  if (franceGuess.indexOf(sizeGuess) > -1) {
     console.log('user guessed 4 or 4.2 OK');
     return alert('Good job! 4 times, or 4.2 to be exact');
   } else {
