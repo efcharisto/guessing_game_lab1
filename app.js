@@ -14,6 +14,7 @@ userAnswer();
 anotherAnswer();
 finalAnswer();
 
+
 function country(){
   var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
   var countryGuess = prompt('Name the largest country in North America').toLowerCase();
