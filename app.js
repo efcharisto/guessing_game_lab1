@@ -15,6 +15,9 @@ questionSeven();
 finalAnswer();
 gamesCount();
 
+//make a global variable. maybe IF statement: IF user says yes,
+//incrimnet i and run evetyhing again. If user says NO, stop and
+//dipslay how many time user played.
 function gamesCount() {
   for (var i = 1; i <= 4;) {
     alert('you played ' + i + ' games total');
@@ -171,8 +174,8 @@ function finalAnswer() {
     questionFive();
     questionSix();
     questionSeven();
-    finalAnswer();
     gamesCount();
+    finalAnswer();
 
   } else if (lastAnswer === 'no' || lastAnswer === 'n') {
     console.log('Ze End');
