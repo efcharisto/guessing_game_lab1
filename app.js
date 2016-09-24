@@ -13,17 +13,15 @@ questionFive();
 questionSix();
 questionSeven();
 finalAnswer();
-//gamesCount();
+gamesCount();
 
-/* function gamesCount() {
-  //var games = [];
+function gamesCount() {
   for (var i = 1; i <= 4;) {
     alert('you played ' + i + ' games total');
-    //games.push(i);
     i++;
     console.log(i);
   }
-} */
+}
 
 function country() {
   var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
