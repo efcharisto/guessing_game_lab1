@@ -172,3 +172,8 @@ function finalAnswer() {
     finalAnswer();
   }
 }
+/*
+function gameCount
+var games = [];
+games.push(i);
+i++; */
