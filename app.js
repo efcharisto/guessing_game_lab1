@@ -13,6 +13,17 @@ questionFive();
 questionSix();
 questionSeven();
 finalAnswer();
+//gamesCount();
+
+/* function gamesCount() {
+  //var games = [];
+  for (var i = 1; i <= 4;) {
+    alert('you played ' + i + ' games total');
+    //games.push(i);
+    i++;
+    console.log(i);
+  }
+} */
 
 function country() {
   var countries = ['russia', 'canada', 'united utates', 'us', 'usa', 'china', 'brazil'];
@@ -163,6 +174,8 @@ function finalAnswer() {
     questionSix();
     questionSeven();
     finalAnswer();
+    gamesCount();
+
   } else if (lastAnswer === 'no' || lastAnswer === 'n') {
     console.log('Ze End');
     alert('It\'s all good my friend. Take care');
