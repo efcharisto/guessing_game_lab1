@@ -21,11 +21,14 @@ function myBday(){
   if (guessDay <= 14){
     alert('too low, try again');
     myBday();
-  } else if (guessDay >= 15 && guessDay <= 25 && guessDay != 18){
+  } else if (guessDay >= 15 && guessDay <= 23){
     alert('close, try again');
     myBday();
-  } else{
-    return alert('you are correct!');
+  } else if (myBday(guessDay > 22 && guessDay <= 31)){
+    alert('too high, try again!');
+    myBday();
+  } else {
+    return alert('good job!');
   }
 }
 
