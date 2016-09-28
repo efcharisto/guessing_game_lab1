@@ -3,6 +3,7 @@
 var userName = prompt('What\'s your name?');
 alert('Welcome to my site ' + userName + '! I\'ll ask you some Qs if you don\'t mind.');
 
+myBday();
 country();
 sizeFrance();
 questionOne();
@@ -14,6 +15,26 @@ questionSix();
 questionSeven();
 finalAnswer();
 gamesCount();
+
+function myBday() {
+  var guessDay = prompt('What day was born? Enter a number 1-31');
+  if (guessDay > 0 && guessDay <= 12) {
+    alert('Too low, try again');
+    myBday();
+  } else if (guessDay > 12 && guessDay <= 17) {
+    alert('Close, try again');
+    myBday();
+  } else if (guessDay >= 19 && guessDay <= 31) {
+    alert('Too high, try again!');
+    myBday();
+  } else if (guessDay == 18){
+    return alert('GREAT SUCCESS!');
+  }
+  else {
+    alert('Please enter a valid number between 1 and 31.');
+    myBday();
+  }
+}
 
 //make a global variable. maybe IF statement: IF user says yes,
 //incrimnet i and run evetyhing again. If user says NO, stop and
