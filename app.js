@@ -16,19 +16,23 @@ questionSeven();
 finalAnswer();
 gamesCount();
 
-function myBday(){
+function myBday() {
   var guessDay = prompt('What day was born? Enter a number 1-31');
-  if (guessDay <= 14){
-    alert('too low, try again');
+  if (guessDay > 0 && guessDay <= 12) {
+    alert('Too low, try again');
     myBday();
-  } else if (guessDay > 14 && guessDay <= 22){
-    alert('close, try again');
+  } else if (guessDay > 12 && guessDay <= 17) {
+    alert('Close, try again');
     myBday();
-  } else if (myBday(guessDay > 22 && guessDay <= 31)){
-    alert('too high, try again!');
+  } else if (guessDay >= 19 && guessDay <= 31) {
+    alert('Too high, try again!');
     myBday();
-  } else {
-    return alert('good job!');
+  } else if (guessDay == 18){
+    return alert('GREAT SUCCESS!');
+  }
+  else {
+    alert('Please enter a valid number between 1 and 31.');
+    myBday();
   }
 }
 
