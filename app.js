@@ -14,7 +14,7 @@ questionFive();
 questionSix();
 questionSeven();
 finalAnswer();
-gamesCount();
+//gamesCount();
 
 function myBday() {
   var guessDay = prompt('What day was born? Enter a number 1-31');
@@ -186,6 +186,7 @@ function finalAnswer() {
   if (lastAnswer === 'yes' || lastAnswer === 'y') {
     console.log('start all over again!');
     alert('That\'s great  ' + userName + '! Answer them again! :)');
+    myBday();
     country();
     sizeFrance();
     questionOne();
@@ -195,8 +196,8 @@ function finalAnswer() {
     questionFive();
     questionSix();
     questionSeven();
-    gamesCount();
     finalAnswer();
+    //gamesCount();
 
   } else if (lastAnswer === 'no' || lastAnswer === 'n') {
     console.log('Ze End');
