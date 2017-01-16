@@ -14,7 +14,7 @@ questionFive();
 questionSix();
 questionSeven();
 finalAnswer();
-//gamesCount();
+gamesCount();
 
 function myBday() {
   var guessDay = prompt('What day was born? Enter a number 1-31');
